@@ -109,8 +109,7 @@ namespace Microsoft.Extensions.DependencyInjection
             {
                 workerOption.InputConverters.Register<FunctionContextConverter>();
                 workerOption.InputConverters.Register<TypeConverter>();
-                workerOption.InputConverters.Register<GuidConverter>();
-                workerOption.InputConverters.Register<DateTimeConverter>();
+                workerOption.InputConverters.Register<ParseConverter>();
                 workerOption.InputConverters.Register<MemoryConverter>();
                 workerOption.InputConverters.Register<StringToByteConverter>();
                 workerOption.InputConverters.Register<JsonPocoConverter>();
